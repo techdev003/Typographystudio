@@ -1,0 +1,187 @@
+/*
+Theme Name: Twenty Twenty-one child
+Author: 
+Description: Your description goes here
+Version: 1.0
+Template: twentytwentyone
+
+This is the child theme for Twenty Twenty-One theme, generated with Generate Child Theme plugin by catchthemes.
+
+(optional values you can add: Theme URI, Author URI, License, License URI, Tags, Text Domain)
+*/
+
+
+
+.row > .column {
+  padding: 0 9px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33%;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 )*/
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mySlides {
+
+    width: 100%;
+    max-width: 32%;
+    margin:unset !important;
+    position:relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+div#myModal img {
+    height: auto;
+
+}
+
+/*31-10-2023*/
+
+
+/* The Modal (background) */
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 0px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    /* overflow: auto; */
+    background-color: rgba(0,0,0,0.5);
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* The Close Button */
+.close {
+    color: white;
+    position: fixed !important;   
+    font-size: 35px !important;
+    font-weight: bold;   
+    z-index: 999999999 !important; 
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: fixed !important;   
+    margin: auto;
+    bottom: -15% !important;
+    z-index: 9999999999999999999;
+    left: 50%;
+    transform: translate(-50%, -15%);
+}
+.modal-content {   
+    background-color: rgba(0,0,0,0.5);
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 992px) {.payment-row-section ul,.order-row-section ul{padding-left:17px;}}
+@media screen and (max-width: 575px) {.sidebar-order-section:after{display:none;}}
+@media screen and (min-width: 2250px) {
+  .um-page-login #page > article,.um-page-password-reset #page > article,.um-page-register #page > article,.page-id-168 .elementor-168,.elementor-3257{
+	height: calc(100vh - 527px);
+    display: flex;
+    flex-direction: column;
+/*     align-items: center; */
+    justify-content: center;
+}
+}
